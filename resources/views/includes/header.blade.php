@@ -9,10 +9,10 @@
 		<div class="collapse navbar-collapse" id="navbarResponsive">
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item">
-					<a class="nav-link" href="index.html">Competencias</a>
+					<a class="nav-link" href="/#competencias">Competencias</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="about.html">Eventos</a>
+					<a class="nav-link" href="/eventos">Eventos</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="post.html">OMI 2020</a>
@@ -21,7 +21,7 @@
 					<a class="nav-link" href="contact.html">ICPC 2020</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="contact.html">Contacto</a>
+					<a class="nav-link" href="/#contacto">Contacto</a>
 				</li>
 			</ul>
 		</div>

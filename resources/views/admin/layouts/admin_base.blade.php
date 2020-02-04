@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang = "es">
 <head>
-	@include('includes.head')
+	@include('admin.includes.head')
 	@yield('title')
 </head>
 <body>
-	@include('includes.header')
+	@include('admin.includes.header')
 	<!-- Start content section -->
 	@yield('content')
 	<!-- Finish content section -->
 	<footer>
-		@include('includes.footer')
+		@include('admin.includes.footer')
 	</footer>
 </body>
 </html>

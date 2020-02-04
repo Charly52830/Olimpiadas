@@ -14,3 +14,12 @@
 Route::get('/', function () {
     return view('pages.index');
 });
+
+Route::get('/nuevo_evento', function() {
+	return view('admin.pages.nuevo_evento');
+});
+
+Route::post('/crear_post',[
+    'uses'=>'EventosController@create',
+    'as'=>'eventos.crear_nuevo'
+]);
