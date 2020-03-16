@@ -15,9 +15,8 @@
 		          Eventos
 				</a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item" href="/nuevo_evento">Nuevo</a>
-		          <a class="dropdown-item" href="#">Editar</a>
-		          <a class="dropdown-item" href="#">Eliminar</a>
+                  <a class="dropdown-item" href="{{ route('eventos.nuevo_evento') }}">Nuevo</a>
+		          <a class="dropdown-item" href="{{ route('eventos.ver_eventos_admin') }}">Ver</a>
 		        </div>
 			</li>
 		</ul>

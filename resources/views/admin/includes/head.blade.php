@@ -2,7 +2,8 @@
 <meta name="csrf-token" content="{{ csrf_token() }}">
 
 <!-- Bootstrap core CSS -->
-<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="{{ URL::asset('css/bootstrap.min.css') }}" rel="stylesheet">
+
 
 <!-- Custom styles -->
-<link href="css/main.css" rel="stylesheet">
+<link href="{{ URL::asset('css/main.css') }}" rel="stylesheet">

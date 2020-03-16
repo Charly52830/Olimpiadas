@@ -56,7 +56,7 @@
 				</select>
 			</div>
 			<div class="form-group">
-				<label for="lugar_evento">Nombre</label>
+				<label for="lugar_evento">Lugar</label>
 				<textarea class="form-control" name="lugar_evento" id="lugar_evento" rows="1">Edificio de Ingeniería de Software e Ingeniería en Computación, Campus UAZ Siglo XXI</textarea>
 			</div>
 			<button type="submit" class="btn btn-primary mb-2">Agendar</button>

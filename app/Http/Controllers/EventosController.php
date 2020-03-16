@@ -54,8 +54,46 @@ class EventosController extends Controller
         $evento->tipo_evento = strtolower($request->tipo_evento); 
         $evento->lugar = $request->lugar_evento;
         $evento->save();
-        //return redirect('/');
-        
+        return redirect('ver_eventos_admin');
+    }
+    
+    /**
+     * Show all events
+     *
+     * @return view admin/pages/ver_eventos
+     */
+    public function show_all()
+    {
+	    $eventos = Evento::all();
+	    return view('admin.pages.ver_eventos',[
+			'eventos'=>$eventos,
+        ]);
+    }
+    
+    /**
+     * Display the specified resource.
+     *
+     * @param  \App\Eventos  $eventos
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id_evento)
+    {
+        $evento = Evento::find($id_evento);
+        return view('admin.pages.editar_evento', [
+        	'evento' => $evento,
+        ]);
+    }
+    
+    /**
+     *
+     *
+     *
+     */
+    public function delete(Request $request)
+    {
+    	$evento = Evento::find($request -> id);
+    	$evento -> delete();
+    	return redirect('ver_eventos_admin');
     }
 
     /**
@@ -69,16 +107,7 @@ class EventosController extends Controller
         //
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Eventos  $eventos
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Eventos $eventos)
-    {
-        //
-    }
+    
 
     /**
      * Show the form for editing the specified resource.
