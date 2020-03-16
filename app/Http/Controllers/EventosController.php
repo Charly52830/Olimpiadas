@@ -95,7 +95,7 @@ class EventosController extends Controller
 		}
 		$evento = Evento::find($request -> id);
 		self::store($request, $evento);
-        return redirect('ver_eventos_admin'); 
+		return redirect('ver_eventos_admin'); 
     }
     
     /**

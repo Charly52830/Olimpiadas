@@ -6,7 +6,7 @@
 
 	<div class="container">
 		<h1>Editar evento</h1>
-		<form action = "{{route('eventos.crear_nuevo')}}" method="post">
+		<form action = "{{ route('eventos.actualizar') }}" method="post">
 			@csrf
 			<input name="id" id="id" hidden value="{{ $evento -> id }}"></input>
 			<div class="form-group">

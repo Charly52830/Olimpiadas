@@ -19,9 +19,14 @@ Route::get('/nuevo_evento', function() {
 	return view('admin.pages.nuevo_evento');
 }) -> name('eventos.nuevo_evento');
 
-Route::post('/crear_post',[
-    'uses'=>'EventosController@create',
-    'as'=>'eventos.crear_nuevo'
+Route::post('/crear_evento',[
+    'uses' => 'EventosController@create',
+    'as' => 'eventos.crear_nuevo'
+]);
+
+Route::post('/actualizar_evento', [
+	'uses' => 'EventosController@update',
+	'as' => 'eventos.actualizar'
 ]);
 
 Route::post('eliminar_evento',[
